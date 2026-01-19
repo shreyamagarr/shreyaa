@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya's Beauty Hub - Login</title>
+    <style>
+        /* Modern Aesthetic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Clean, modern font */
+        }
+
+        body {
+            /* Soft gradient background */
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-card {
+            background-color: #ffffff;
+            padding: 45px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        /* Title & Branding - Replaced Green with Beauty Hub colors */
+        .brand-name {
+            color: #d4a373; /* Elegant Gold/Tan */
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .sub-title {
+            font-size: 15px;
+            color: #888;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Form Controls */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 13px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1.5px solid #eee;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #d4a373;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(212, 163, 115, 0.2);
+        }
+
+        /* Button Styling - Using a warm, premium color */
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #2d2d2d; /* Modern Dark/Charcoal */
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #d4a373; /* Switch to Gold on hover */
+            transform: translateY(-2px);
+        }
+
+        /* Footer Link */
+        .footer-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .footer-text a {
+            color: #d4a373;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="brand-name">Shreyas Beauty Hub</div>
+        <div class="sub-title">Welcome Back</div>
+
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Login to Hub</button>
+        </form>
+
+        <p class="footer-text">
+            New here? <a href="#">Create an account</a>
+        </p>
+    </div>
+
+</body>
+</html>
